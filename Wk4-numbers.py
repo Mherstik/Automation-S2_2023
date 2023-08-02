@@ -5,7 +5,6 @@ Spyder Editor
 This is a temporary script file.
 """
 
-print("blah")
 num = input("give me a number between 0 and 100: ")
 
 while num.isdigit() == False:
@@ -22,6 +21,14 @@ while num < 0 or num > 100:   # needs an OR not an AND
     num = int(input("give me a number between 0 and 100: "))
 
 print("We're out of the loop")
+
+####
+#
+# YOUR MISSION IS TO MAKE 1 LOOP
+# that will check it's a valid number and not anything but a number
+#
+####
+
 
 # if num.isdigit() == True:
 #     print(num)
