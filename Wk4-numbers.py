@@ -4,15 +4,33 @@ Author: Marcus Herstik
 This it the week 4 scripts file
 """
 
+### Practice 1
 # Write a while loop that adds all the numbers up to 100 (inclusive).
 
 counter = 0
 total = 0
 
-
 ## While loop here...
+while counter <= 100:
+    if counter == 5:
+        print(counter, "I'm going back to the top of the loop")
+        counter = counter + 5
+        total = 0
+        continue
+    
+    total = total + counter
+    counter = counter + 1
+
+    if total == 69:
+        print("I've got to break free!!!")
+        break
+    
 
 print(total)
+
+
+####################
+# Learning
 
 # 
 # num = input("give me a number between 0 and 100: ")
