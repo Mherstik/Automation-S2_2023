@@ -55,7 +55,11 @@ while i < 100:
         print(i)
 
 
+##
+# import datetime
+# now = datetime.datetime.now()
+# print(now)
+# print(now.month)
+# print(now.weekday())
+# print(now.hour)
 
-
-
-    
