@@ -21,7 +21,7 @@ def checkDigit():
     global user_choice
     if user_choice.isdigit():
         user_choice = int(user_choice)
-        if user_choice not in range(1,100):
+        if user_choice not in range(1,101):
             print("Outside of range 1 to 100")
             getChoice()
         return True 
@@ -56,12 +56,5 @@ while chances > 0:
             print("Too High")
         else:
             print("Too low")
-    print("You have", chances, "left")
-    # Check high or low
-    #getChoice()
-    
-    
-
-
-
+    print("You have", chances, "chances left")
 
