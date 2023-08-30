@@ -14,14 +14,16 @@ chances = 3
 ## program picks a number between 1 and 100
 
 comp_choice = r.randrange(1,101)
-#print(comp_choice)
+print(comp_choice)
 
 # get input from user
 user_choice = input("Gimme a number, punk: ")
 # check if it's really a number
 
 def checkDigit():
+    global user_choice
     if user_choice.isdigit():
+        user_choice = int(user_choice)
         return True
         # do something
     else: 
@@ -36,7 +38,7 @@ while checkDigit() == False:
 if user_choice == comp_choice:
     print("Yay !!\n You won")
 else:
-    print("Do something")
+    print("You got it wrong!!")
 
 
 
