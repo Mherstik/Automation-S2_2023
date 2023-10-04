@@ -28,6 +28,10 @@ def num_choice():
 def dice_roll(sides):
     return random.randint(1, sides)
 
+
+def something():
+    pass
+
 #print(random.randint(1, 6))
 
 if __name__ == '__main__':
