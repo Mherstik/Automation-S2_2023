@@ -14,6 +14,9 @@ Created on Wed Oct 11 14:04:36 2023
 # 
 # 
 
+# Character Frequency Counter
+
+
 def count_characters(text):
     char_frequency = {}
     for char in text:
@@ -29,3 +32,16 @@ frequency = count_characters(user_input)
 print("Character frequencies:")
 for char, count in frequency.items():
     print(f"'{char}': {count}")
+
+## ATM simulator
+## deposit, withdraw or display balance
+#
+# balance is just print the balance
+# deposit is add value to balance
+# is sum requested is more than balance
+#  if no, withdraw is minus from balance
+#  if yes, say not enough money
+#
+
+
+
