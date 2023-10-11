@@ -37,13 +37,14 @@ Created on Wed Oct 11 14:04:36 2023
 
 ## ATM simulator
 ## deposit, withdraw or display balance
-#
+# choose from list
 # balance is just print the balance
 # deposit is add value to balance
-# is sum requested is more than balance
-#  if no, withdraw is minus from balance
-#  if yes, say not enough money
-#
+# withdraw 
+    # is sum requested is more than balance?
+    #  if no, withdraw is minus from balance
+    #  if yes, say not enough money
+# exit
 
 balance = 1000 # starting balance
 
@@ -52,9 +53,11 @@ def display_balance():
 
 def deposit(amount):
     pass
+    # can't deposit more than $10,000.00
+    #
 
 def withdraw(amount):
     pass
-
+    
 
 
