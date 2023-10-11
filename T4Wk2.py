@@ -46,18 +46,48 @@ Created on Wed Oct 11 14:04:36 2023
     #  if yes, say not enough money
 # exit
 
-balance = 1000 # starting balance
+balance = 1000.00 # starting balance
 
 def display_balance():
-    print("Your balance is ", balance)
+    print(f"Your current balance is ${balance:.2f}")
 
 def deposit(amount):
-    pass
+    global balance
+    #pass
     # can't deposit more than $10,000.00
-    #
+    if amount > 10000:
+        print("\nThat's too much money. AUSTRAC will get you!")
+    else:
+        balance = balance + amount
+        print("\nYou have successfully deposited", amount)
+        display_balance()
 
 def withdraw(amount):
-    pass
+    #pass
+    global balance
+    if amount > balance:
+        print('\nYou cannot withdraw that amount, it will overdraw you!')
+    else: 
+        balance = balance - amount
+        display_balance()
+
+print("Welcome to the Marcus ATM")
     
-
-
+while True:
+    print("\nPress 1 to check your balance\nPress 2 to deposit\nPress 3 to Withdraw\nPress 4 to exit")
+    
+    # get choice from user
+    choice = int(input("Enter your choice: "))
+    
+    # run function for choice
+    if choice == 1:
+        display_balance()
+    elif choice == 2:
+        deposit(float(input("Enter amount to deposit: ")))
+    elif choice == 3:
+        withdraw(float(input("Enter amount to withdraw: ")))
+    elif choice == 4:
+        print("Thank you for using Marcus' ATM.\nGoodbye!")
+        break
+    else:
+        print("Invalid choice. Please try again")
