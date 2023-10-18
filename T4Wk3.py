@@ -1,5 +1,9 @@
 '''
-Description: a Python script that backs up specified files or directories to a designated backup location.
+Description: a
+Python script that backs up specified files or directories 
+to a designated backup location.
+
+TODO: 
 1) Fix the file.
 2) Then see if we can make it zip a file/folder
 '''
@@ -14,6 +18,7 @@ def backup_files(source_dir, backup_dir):
     except shutil.Error as e:
         print(f"Error: {e}")
 
-source_directory = '/path/to/source'
-backup_directory = '/path/to/backup'
-do_backup(source_dir, backup_dir)
+source_directory = '/home/marcus/Documents/GitHub/'
+# source_directory = "C:\Users\user\Documents\Automation"
+backup_directory = '/home/marcus/Documents/Backup2'
+backup_files(source_directory, backup_directory)
