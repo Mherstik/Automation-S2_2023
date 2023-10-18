@@ -1,5 +1,7 @@
 '''
 Description: a Python script that backs up specified files or directories to a designated backup location.
+1) Fix the file.
+2) Then see if we can make it zip a file/folder
 '''
 
 import shutil  # what is this? Do you have it?
