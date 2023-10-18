@@ -5,7 +5,8 @@ to a designated backup location.
 
 TODO: 
 1) Fix the file.
-2) Then see if we can make it zip a file/folder
+2) Make the file ask a location to store the backup and check if the folder exists
+3) Then see if we can make it zip a file/folder
 '''
 
 import shutil  # what is this? Do you have it?
