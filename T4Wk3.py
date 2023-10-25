@@ -1,6 +1,5 @@
 '''
-Description: a
-Python script that backs up specified files or directories 
+Description: a Python script that backs up specified files or directories 
 to a designated backup location.
 
 TODO: 
