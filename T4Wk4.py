@@ -19,6 +19,24 @@ current = datetime.datetime.now()
 current = str(current.year) + str(current.month) + str(current.day) + str(current.hour) + str(current.minute)
 
 def backup_files(source_dir, backup_dir):
+    '''
+    This function take a source directory,
+    backs it up as a zip file and stores it
+    at the backup_dir.
+    
+
+    Parameters
+    ----------
+    source_dir : string
+        source directory to backup.
+    backup_dir : string
+        destination directory to put the backup.
+
+    Returns
+    -------
+    None.
+
+    '''
     global backup_file
     try:
         # changed from shutil to zipping
@@ -31,6 +49,8 @@ def backup_files(source_dir, backup_dir):
         print("Backup successful!")
     except shutil.Error as e:
         print(f"Error: {e}")
+
+help(backup_files)
 
 source_directory =  input("Enter the source directory to backup: ")   # '/home/marcus/Documents/GitHub/'
 # source_directory = "C:\Users\user\Documents\Automation"
